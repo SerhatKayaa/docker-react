@@ -6,7 +6,7 @@ before_install:
   - docker build -t serhatkayaa/docker-react -f Dockerfile.dev .
 
 script:
-  - docker run -e CI=true serhatkaya
+  - docker run -e CI=true serhatkaya/docker-react
 
 deploy:
   provider: elasticbeanstalk
