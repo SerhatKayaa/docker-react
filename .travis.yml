@@ -9,7 +9,6 @@ script:
   - docker run -e CI=true serhatkaya
 
 deploy:
-  edge: true
   provider: elasticbeanstalk
   region: "us-east-1"
   app: "docker-react"
